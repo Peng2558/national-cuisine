@@ -1,0 +1,22 @@
+
+.grid-wrapper {
+    padding: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  .grid-item p {
+    text-align: center;
+    color: rgb(10, 10, 10);
+  }
+  
