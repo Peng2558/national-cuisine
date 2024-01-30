@@ -1,12 +1,13 @@
 
-.grid-wrapper {
+ .grid-wrapper {
     padding: 20px;
   }
   
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
+
   }
   
   .grid-item img {
@@ -19,4 +20,7 @@
     text-align: center;
     color: rgb(10, 10, 10);
   }
+  
+
+  
   

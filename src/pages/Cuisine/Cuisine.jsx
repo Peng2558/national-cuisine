@@ -14,7 +14,6 @@ export default function Cuisine(){
    },[params.type])
    
   return (
-
     <>
     <h2>{params.type} Cuisine</h2>
     <div className="grid-container">
@@ -22,7 +21,7 @@ export default function Cuisine(){
         <div className="card" key={item.id}>
           <Link to={`/recipe/${item.id}`}>
             <img src={item.image} alt={item.title} />
-            <h3>{item.title}</h3>
+            <h5>{item.title}</h5>
           </Link>
         </div>
       ))}
@@ -31,3 +30,4 @@ export default function Cuisine(){
 );
 
 }
+

@@ -2,6 +2,7 @@ import { eventWrapper } from "@testing-library/user-event/dist/utils";
 import { useEffect, useState } from "react";
 import GridGallery from "../GridGallery/GridGallery";
 
+
 export default function FavData(){
     const[favData, setFavData]= useState([])
 
@@ -23,6 +24,6 @@ export default function FavData(){
         console.log(data.recipes);
     } 
    };
-   return <GridGallery items={favData} />;
+   return <GridGallery items={favData}  /> ;
    
 }
