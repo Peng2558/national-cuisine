@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link,useParams } from "react-router-dom";
-
+import GridGallery from "../../components/GridGallery/GridGallery";
 export default function Cuisine(){
    const [cuisine,setCuisine]= useState([]);
    let params = useParams();
@@ -15,17 +15,21 @@ export default function Cuisine(){
    
   return (
     <>
-    <h2>{params.type} Cuisine</h2>
+    {/* <h2>{params.type} Cuisine</h2>
     <div className="grid-container">
       {cuisine.map((item) => (
         <div className="card" key={item.id}>
-          <Link to={`/recipe/${item.id}`}>
+          <Link to={'/recipe/'+ item.id}>
             <img src={item.image} alt={item.title} />
-            <h5>{item.title}</h5>
+            <p>{item.title}</p>
           </Link>
         </div>
       ))}
-    </div>
+    </div> */}
+     <>
+      <h2>{params.type} Cuisine</h2>
+      <GridGallery items={cuisine} />
+    </>
   </>
 );
 

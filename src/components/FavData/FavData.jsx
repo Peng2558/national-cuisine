@@ -24,6 +24,11 @@ export default function FavData(){
         console.log(data.recipes);
     } 
    };
-   return <GridGallery items={favData}  /> ;
+   return( 
+   <>
+     <h3>Trending</h3> 
+     <GridGallery items={favData}  /> 
+   </>
+   );
    
 }
