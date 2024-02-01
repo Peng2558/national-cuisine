@@ -3,6 +3,11 @@ import sendRequest from "./send-request";
  
 
 export function addToFavoritePage(detail){
-    
+
     return sendRequest(`${BASE_URL}/favorites`, 'POST', detail);
+}
+
+export function fetchFavorites(){
+
+    return sendRequest(`${BASE_URL}/favorites`);
 }

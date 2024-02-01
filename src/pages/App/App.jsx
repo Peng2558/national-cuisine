@@ -12,6 +12,7 @@ import FavData from '../../components/FavData/FavData';
 import DifferentCuisines from '../../components/DifferentCuisines.jxs/DifferentCuisines';
 import Cuisine from '../Cuisine/Cuisine';
 import Recipe from '../Recipe/Recipe';
+import FavoritesPage from '../FavoritesPage/FavoritesPage';
 function App() {
   const [user, setUser] = useState(getUser())
   return (
@@ -24,6 +25,7 @@ function App() {
          <Route path="/" element={<Home />} />
          <Route path="/cuisine/:type" element={<Cuisine />} />
          <Route path="/recipe/:name" element={<Recipe />} />
+         <Route path="/recipes/favorites" element={<FavoritesPage />} />
          {/* <Route path="/orders/new" element={<NewOrderPage />} />
          <Route path="/orders" element={<OrderHistoryPage />} />
         */}
