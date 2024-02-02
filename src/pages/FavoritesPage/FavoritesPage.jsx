@@ -33,9 +33,10 @@ export default function FavoritesPage() {
             <div key={recipe._id}>
                 <h2>{recipe.title}</h2>
                 <img src={recipe.image} alt={recipe.title} />
+                <h2>Instruction</h2>
                 <div dangerouslySetInnerHTML={{__html: recipe.instructions}}></div>
                 <ul>
-                    <h4>Ingredients</h4>
+                    <h2>Ingredients</h2>
                     {recipe.extendedIngredients.map((ingredient, index) => (
                         <li key={`${ingredient.id}-${index}`}>{ingredient.original}</li>
                     ))}
