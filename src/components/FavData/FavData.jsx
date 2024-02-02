@@ -12,17 +12,9 @@ export default function FavData(){
 
    },[]);
    const getFavData = async () => {
-    const temp = localStorage.getItem("favData");
-    if(temp){
-        setFavData(JSON.parse(temp));
-    }
-    else{
-        const api = await fetch (`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`);
-        const data = await api.json();
-        localStorage.setItem("favData",JSON.stringify(data.recipes));
-        setFavData(data.recipes);
-        console.log(data.recipes);
-    } 
+    const api = await fetch (`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`);
+    const data = await api.json();
+    setFavData(data.recipes);
    };
    return( 
    <>

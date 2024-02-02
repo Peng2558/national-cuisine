@@ -32,7 +32,7 @@ export default function Recipe(){
       <div>
         <h2>{detail.title}</h2>
         <img src={detail.image} alt={detail.title} />
-        <h2>Instruction</h2>
+        <h2>Instructions</h2>
         <h5 dangerouslySetInnerHTML={{__html:detail.instructions}}></h5>
       </div>
       <ul>
