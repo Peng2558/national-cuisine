@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
 import * as recipesAPI from '../../utilities/recipes-api';
+import './Recipe.css';
 export default function Recipe(){
    
     let params = useParams();
@@ -31,10 +32,11 @@ export default function Recipe(){
       <div>
         <h2>{detail.title}</h2>
         <img src={detail.image} alt={detail.title} />
-        <h4 dangerouslySetInnerHTML={{__html:detail.instructions}}></h4>
+        <h2>Instruction</h2>
+        <h5 dangerouslySetInnerHTML={{__html:detail.instructions}}></h5>
       </div>
       <ul>
-        <h4>Ingredients</h4>
+        <h2>Ingredients</h2>
          {detail.extendedIngredients && detail.extendedIngredients.map((ingredient, index) => (
         <li key={`${ingredient.id}-${index}`}>{ingredient.original}</li>
          ))}

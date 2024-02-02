@@ -1,0 +1,39 @@
+nav {
+ 
+    color: #111010; 
+    padding: 1rem; 
+    display: flex; 
+    justify-content:  space-between;
+    align-items: center; 
+    font-family: 'Arial', sans-serif; 
+  }
+  nav a {
+    color: #0c0c0d; 
+    text-decoration: none; 
+    font-weight: bold; 
+    margin: 0 15px; 
+    transition: color 0.3s; 
+  }
+  
+  nav a:hover {
+    color: #C0C0C0; 
+  }
+  nav {
+    position: relative; 
+  }
+  
+  .welcome-message {
+    position: absolute; 
+    left: 5px; 
+    color: #121212; 
+    font-size: 2rem; 
+  }
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column; 
+    }
+    .welcome-message {
+      position: static; 
+      margin-bottom: 1rem; 
+    }
+  }

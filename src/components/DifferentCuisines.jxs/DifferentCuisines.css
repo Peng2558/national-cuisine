@@ -1,7 +1,31 @@
-.icons {
-
+/* .icons {
    display: flex;
    justify-content: center;
    margin: 2rem 0rem;
    gap: 20px;
-}
+} */
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icons svg {
+    color: #121213; /* Icon color */
+    margin-bottom: 4px; /* Space between icon and text */
+    font-size: 35px; /* Icon size */
+  }
+  
+  h4 {
+    color:black;
+    margin: 0;
+    text-align: center;
+  }
+  

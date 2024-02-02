@@ -4,8 +4,9 @@ import { GiNoodles } from "react-icons/gi";
 import { GiTacos } from "react-icons/gi";
 import { GiOlive } from "react-icons/gi";
 import { FaHome } from "react-icons/fa";
+import { MdFavorite } from "react-icons/md";
 import { Link } from "react-router-dom";
-import './DifferentCuisines.css'
+import './DifferentCuisines.css';
 export default function DifferentCuisines(){
 
            return(
@@ -51,6 +52,12 @@ export default function DifferentCuisines(){
                 <div>
                  <GiOlive/>
                <h4>Greek</h4>
+                </div>
+            </Link> 
+            <Link to={"/recipes/favorites"}>  
+                <div>
+                <MdFavorite style={{ color: 'red' }}  />
+               <h4>My Favorite Recipes</h4>
                 </div>
             </Link> 
             </div>        
