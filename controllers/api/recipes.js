@@ -3,7 +3,7 @@ const Recipe = require('../../models/recipe');
 const BASE_URL = `https://api.spoonacular.com/recipes/`;
 
 module.exports = {
-    create,index,getData
+    create,index,getData,getCuisineData
   };
   async function create(req, res) {
       
@@ -35,17 +35,18 @@ async function getData(req,res){
   }
  
 }
-// async function getCuisineData(req,res){
-//   try{
-
-//     const response = await fetch (`${BASE_URL}/complexSearch?apiKey=${process.env.API_KEY}&cuisine=${name}&number=9`);
-//     const recipes = await response.json();
-//     res.json(recipes);
+async function getCuisineData(req,res){
+  try{
+   
+    const {cuisine} = req.query;
+    const response = await fetch (`${BASE_URL}/complexSearch?apiKey=${process.env.API_KEY}&cuisine=${cuisine}&number=9`);
+    const recipes = await response.json();
+    res.json(recipes);
   
-//   } catch(err){
+  } catch(err){
 
-//     console.log(err);
-//     res.status(400).json(err);
-//   }
+    console.log(err);
+    res.status(400).json(err);
+  }
  
-// }
+}

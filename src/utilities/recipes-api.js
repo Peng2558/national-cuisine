@@ -17,7 +17,11 @@ export function getData(){
     return sendRequest(`${BASE_URL}/`);
 }
 
-// export function getCuisineData(){
-
-//     return sendRequest(`${BASE_URL}/`);
-// }
+export function getCuisineData(name){
+  
+    return sendRequest(`${BASE_URL}/cuisine?`+ new URLSearchParams({
+        cuisine: `${name}`
+      
+    }));
+    
+}
