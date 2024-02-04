@@ -9,6 +9,7 @@ export default function Cuisine(){
    let params = useParams();
     async function getCuisine(name){
     const {recipes} = await recipesAPI.getCuisineData(name); 
+    console.log(recipes);
     setCuisine(recipes.results);
    
    }
