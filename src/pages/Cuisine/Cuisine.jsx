@@ -19,7 +19,7 @@ export default function Cuisine(){
   return (
     <>
      <>
-      <h2>{params.type} Cuisine</h2>
+      <h3>{params.type} Cuisine</h3>
       <GridGallery items={cuisine} />
     </>
   </>
