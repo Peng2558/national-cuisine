@@ -37,7 +37,7 @@ async function getData(req,res){
 }
 async function getCuisineData(req,res){
   try{
-   
+     console.log(API_KEY);
     const {cuisine} = req.query;
     const response = await fetch (`${BASE_URL}/complexSearch?apiKey=${process.env.API_KEY}&cuisine=${cuisine}&number=9`);
     const recipes = await response.json();
