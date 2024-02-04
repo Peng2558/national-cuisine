@@ -7,12 +7,17 @@ export default function Recipe(){
     let params = useParams();
     const [detail,setDetail]= useState({});
 
-    const fetchDetails = async () =>{
-    const data = await fetch(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
-    const detailData = await data.json();
-    setDetail(detailData);
-  
-    };
+    // const fetchDetails = async () =>{
+    // const data = await fetch(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
+    // const detailData = await data.json();
+    // setDetail(detailData);
+   
+    // };
+    async function fetchDetails(){
+      const data = await recipesAPI.getRecipeDetails(params.name); 
+      setDetail(data);
+     
+     };
    useEffect(()=>{
     fetchDetails();
    },[params.name]);

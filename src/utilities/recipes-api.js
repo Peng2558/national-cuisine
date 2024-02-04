@@ -25,3 +25,6 @@ export function getCuisineData(name){
     }));
     
 }
+export function getRecipeDetails(name) {
+    return sendRequest(`${BASE_URL}/recipe?` + new URLSearchParams({ name }));
+}
