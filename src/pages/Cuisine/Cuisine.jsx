@@ -10,7 +10,7 @@ export default function Cuisine(){
     async function getCuisine(name){
     const {recipes} = await recipesAPI.getCuisineData(name); 
     console.log(recipes);
-    setCuisine(recipes.results);
+    setCuisine(recipes?.results);
    
    }
    useEffect(()=>{
