@@ -9,7 +9,7 @@ export default function Cuisine(){
    let params = useParams();
     async function getCuisine(name){
     const {recipes} = await recipesAPI.getCuisineData(name); 
-    const recipeObject = JASON.parse(recipes);
+    const recipeObject = JSON.parse(recipes);
     setCuisine(recipeObject.results);
    
    }
