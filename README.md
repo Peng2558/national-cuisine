@@ -4,7 +4,7 @@
 
 Welcome to the Global Cuisine Explorer, a full-stack MERN application dedicated to bringing the flavors of the world right to your screen. Dive into a diverse collection of recipes from American, Italian, French, Chinese, Mexican, and Greek cuisines, powered by the rich database of the Spoonacular API. Each recipe comes with unique information about ingredients and preparation steps, making it easy to explore and experiment with international dishes from the comfort of your home.
 
-![Global Cuisine Explorer Screenshot](path/to/screenshot.png)
+![Global Cuisine Explorer Screenshot](https://github.com/Peng2558/national-cuisine/assets/72111623/0863a233-1812-4b3e-9937-d2b70fcb7691)
 
 ## Technologies Used
 
@@ -23,8 +23,8 @@ This project leverages the power of the MERN stack alongside the Spoonacular API
 
 Dive into the world of global cuisines by following these links:
 
-- [Project Planning Board](link-to-trello-board): Check out our Trello board for a glimpse into our planning and development process.
-- [Live Application on Heroku](link-to-deployed-app): Experience the Global Cuisine Explorer live.
+- [Project Planning Board](https://trello.com/b/terppBRf/worlds-cuisine): Check out our Trello board for a glimpse into our planning and development process.
+- [Live Application on Heroku](https://national-cuisine-138124aa21c6.herokuapp.com): Experience the Global Cuisine Explorer live.
 
 ## Future Enhancements
 
